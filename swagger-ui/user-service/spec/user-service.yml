@@ -175,6 +175,12 @@ paths:
             type: string
           description: Код верификации подтверждающий доступ к почтовому адресу
           required: true
+        - in: query
+          name: mail
+          schema:
+            type: string
+          description: Электронная почта для которой был выдан код верификации
+          required: true
       responses:
         '200':
           description: "Пользователь верифицирован"
