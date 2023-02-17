@@ -423,7 +423,7 @@ components:
           description: Признак является ли элемент первым
           type: boolean
         number_of_elements:
-          description: Номер элемента
+          description: Количество элементов на текущей странице
           type: integer
         last:
           description: Признак является ли элемент последним
