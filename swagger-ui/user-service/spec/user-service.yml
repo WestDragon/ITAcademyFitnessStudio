@@ -151,7 +151,7 @@ paths:
     post:
       tags:
         - "Личный кабинет"
-      summary: "Регистрация"
+      summary: "Самостоятельная регистрация пользователя"
       requestBody:
         $ref: "#/components/requestBodies/RegistrationUser"
       responses:
@@ -167,7 +167,7 @@ paths:
     get:
       tags:
         - "Личный кабинет"
-      summary: "Верификация"
+      summary: "Верификация самостоятельного зарегистрированного пользователя"
       parameters:
         - in: query
           name: code
