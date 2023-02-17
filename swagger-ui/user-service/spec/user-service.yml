@@ -131,7 +131,7 @@ paths:
           name: dt_update
           required: true
           schema:
-            type: string
+            type: integer
             format: int64
           description: "Дата последнего обновления записи"
       requestBody:
