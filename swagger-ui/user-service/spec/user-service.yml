@@ -156,7 +156,7 @@ paths:
         $ref: "#/components/requestBodies/RegistrationUser"
       responses:
         '201':
-          description: "Пользователь зарегестрирован"
+          description: "Пользователь зарегистрирован"
         '400':
           $ref: '#/components/responses/Bad_Request'
         '403':
@@ -177,7 +177,7 @@ paths:
           required: true
       responses:
         '200':
-          description: "Пользователь верефицирован"
+          description: "Пользователь верифицирован"
         '400':
           $ref: '#/components/responses/Bad_Request'
         '403':
@@ -267,7 +267,7 @@ components:
             t_single_error_response:
               value:
                 - logref: error
-                  message:  Запрос содержит некорретные данные. Измените запрос и отправьте его ещё раз
+                  message:  Запрос содержит некорректные данные. Измените запрос и отправьте его ещё раз
             t_multiple_error_response:
               value:
                 logref: structured_error
@@ -277,7 +277,7 @@ components:
     Unauthorized:
       description: Для выполнения запроса на данный адрес требуется передать токен авторизации
     Forbidden:
-      description: Данному токенту авторизации запрещено выполнять запроса на данный адрес
+      description: Данному токену авторизации запрещено выполнять запроса на данный адрес
     Internal_Server_Error:
       description: Внутренняя ошибка сервера. Сервер не смог корректно обработать запрос
       content:
@@ -443,7 +443,7 @@ components:
         message:
           description: Сообщение ошибки
           type: string
-          example: Запрос содержит некорретные данные. Измените запрос и отправьте его ещё раз
+          example: Запрос содержит некорректные данные. Измените запрос и отправьте его ещё раз
 
     t_multiple_error_response:
       type: object
