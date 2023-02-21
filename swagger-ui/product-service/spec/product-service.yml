@@ -359,6 +359,26 @@ components:
                 format: int32
                 description: "Вес продукта добавленного в блюдо в граммах\\миллилитрах"
                 example: 100
+              calories:
+                type: integer
+                format: int32
+                description: "Калории"
+                example: 308
+              proteins:
+                type: number
+                format: double
+                description: "Белки"
+                example: 12.6
+              fats:
+                type: number
+                format: double
+                description: "Жиры"
+                example: 3.3
+              carbohydrates:
+                type: number
+                format: double
+                description: "Углеводы"
+                example: 57.1
 
     PageOfProduct:
       type: object
