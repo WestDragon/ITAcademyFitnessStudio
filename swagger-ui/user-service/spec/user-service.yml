@@ -414,23 +414,28 @@ components:
       description: Страница
       properties:
         number:
+          description: Номер текущей запрошенной страницы
           type: integer
-          description: Номер страницы
+          format: int32
         size:
-          description: Размер страницы
+          description: Запрошенное количество элементов на страницу
           type: integer
+          format: int32
         total_pages:
-          description: Количество страниц
+          description: Всего количество страниц учитывающих запрашиваемое количество элементов на страницу
           type: integer
+          format: int64
         total_elements:
-          description: Количество записей
+          description: Всего количество записей соответствующих запросу
           type: integer
+          format: int64
         first:
           description: Признак является ли страница первой
           type: boolean
         number_of_elements:
           description: Количество элементов на текущей странице
           type: integer
+          format: int32
         last:
           description: Признак является ли страница последней
           type: boolean
