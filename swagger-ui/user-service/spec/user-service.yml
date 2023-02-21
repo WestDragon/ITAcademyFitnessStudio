@@ -426,13 +426,13 @@ components:
           description: Количество записей
           type: integer
         first:
-          description: Признак является ли элемент первым
+          description: Признак является ли страница первой
           type: boolean
         number_of_elements:
           description: Количество элементов на текущей странице
           type: integer
         last:
-          description: Признак является ли элемент последним
+          description: Признак является ли страница последней
           type: boolean
 
     t_single_error_response:
