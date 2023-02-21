@@ -347,7 +347,13 @@ components:
             type: object
             properties:
               product:
-                $ref: "#/components/schemas/t_base_essence"
+                type: object
+                properties:
+                  uuid:
+                    description: Идентификатор продукта
+                    type: string
+                    format: uuid
+                    readOnly: true
               weight:
                 type: integer
                 format: int32
