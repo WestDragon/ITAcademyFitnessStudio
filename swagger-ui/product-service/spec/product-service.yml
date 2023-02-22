@@ -317,22 +317,22 @@ components:
               calories:
                 type: integer
                 format: int32
-                description: "Калории в составе блюда считается исходя из веса и калорий продукта"
+                description: "Калории в составе блюда считается исходя из веса продукта в блюде и калорий продукта"
                 example: 154
               proteins:
                 type: number
                 format: double
-                description: "Белки в составе блюда считается исходя из веса и белков продукта"
+                description: "Белки в составе блюда считается исходя из веса продукта в блюде и белков продукта"
                 example: 6.3
               fats:
                 type: number
                 format: double
-                description: "Жиры в составе блюда считается исходя из веса и жиров продукта"
+                description: "Жиры в составе блюда считается исходя из веса продукта в блюде и жиров продукта"
                 example: 1.65
               carbohydrates:
                 type: number
                 format: double
-                description: "Углеводы в составе блюда считается исходя из веса и углеводов продукта"
+                description: "Углеводы в составе блюда считается исходя из веса продукта в блюде и углеводов продукта"
                 example: 28.55
         weight:
           type: integer
