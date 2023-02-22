@@ -313,27 +313,52 @@ components:
                 type: integer
                 format: int32
                 description: "Вес продукта добавленного в блюдо в граммах\\миллилитрах"
-                example: 100
+                example: 50
               calories:
                 type: integer
                 format: int32
-                description: "Калории"
-                example: 308
+                description: "Калории в составе блюда"
+                example: 154
               proteins:
                 type: number
                 format: double
-                description: "Белки"
-                example: 12.6
+                description: "Белки в составе блюда"
+                example: 6.3
               fats:
                 type: number
                 format: double
-                description: "Жиры"
-                example: 3.3
+                description: "Жиры в составе блюда"
+                example: 1.65
               carbohydrates:
                 type: number
                 format: double
-                description: "Углеводы"
-                example: 57.1
+                description: "Углеводы в составе блюда"
+                example: 28.55
+        weight:
+          type: integer
+          format: int32
+          description: "Вес всего блюда считается на основе состава"
+          example: 50
+        calories:
+          type: integer
+          format: int32
+          description: "Калории всего блюда считается на основе состава"
+          example: 154
+        proteins:
+          type: number
+          format: double
+          description: "Белки всего блюда считается на основе состава"
+          example: 6.3
+        fats:
+          type: number
+          format: double
+          description: "Жиры всего блюда считается на основе состава"
+          example: 1.65
+        carbohydrates:
+          type: number
+          format: double
+          description: "Углеводы всего блюда считается на основе состава"
+          example: 28.55
     RecipeForCU:
       description: Рецепт блюда
       properties:
@@ -359,26 +384,6 @@ components:
                 format: int32
                 description: "Вес продукта добавленного в блюдо в граммах\\миллилитрах"
                 example: 100
-              calories:
-                type: integer
-                format: int32
-                description: "Калории"
-                example: 308
-              proteins:
-                type: number
-                format: double
-                description: "Белки"
-                example: 12.6
-              fats:
-                type: number
-                format: double
-                description: "Жиры"
-                example: 3.3
-              carbohydrates:
-                type: number
-                format: double
-                description: "Углеводы"
-                example: 57.1
 
     PageOfProduct:
       type: object
