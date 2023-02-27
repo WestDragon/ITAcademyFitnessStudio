@@ -447,10 +447,12 @@ components:
         - logref
         - message
       properties:
-        logref:
-          type: string
-          description: Тип ошибки
-          example: error
+        type: string
+        description: |
+          Тип ошибки:
+            * `error` - Признак что ошибка не привязана к полю
+        enum:
+          - "error"
         message:
           description: Сообщение ошибки
           type: string
@@ -465,7 +467,11 @@ components:
       properties:
         logref:
           type: string
-          description: Тип ошибки
+          description: |
+            Тип ошибки:
+              * `structured_error` - Признак что ошибка привязана к полю
+          enum:
+            - "structured_error"
         errors:
           description: Наименование ошибочного поля
           type: array
