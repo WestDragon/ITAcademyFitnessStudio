@@ -450,7 +450,7 @@ components:
         logref:
           type: string
           description: |
-            Тип ошибки:
+            Тип ошибки (предназначено для машинной обработки):
               * `error` - Признак что ошибка не привязана к полю
           enum:
             - "error"
@@ -469,7 +469,7 @@ components:
         logref:
           type: string
           description: |
-            Тип ошибки:
+            Тип ошибки (предназначено для машинной обработки):
               * `structured_error` - Признак что ошибка привязана к полю
           enum:
             - "structured_error"
