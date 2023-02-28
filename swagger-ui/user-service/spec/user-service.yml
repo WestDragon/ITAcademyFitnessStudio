@@ -447,12 +447,13 @@ components:
         - logref
         - message
       properties:
-        type: string
-        description: |
-          Тип ошибки:
-            * `error` - Признак что ошибка не привязана к полю
-        enum:
-          - "error"
+        logref:
+          type: string
+          description: |
+            Тип ошибки:
+              * `error` - Признак что ошибка не привязана к полю
+          enum:
+            - "error"
         message:
           description: Сообщение ошибки
           type: string
