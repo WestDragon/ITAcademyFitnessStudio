@@ -267,14 +267,14 @@ components:
             oneOf:
               - type: array
                 items:
-                  $ref: '#/components/schemas/t_single_error_response'
-              - $ref: '#/components/schemas/t_multiple_error_response'
+                  $ref: '#/components/schemas/t_error_response'
+              - $ref: '#/components/schemas/t_structured_error_response'
           examples:
-            t_single_error_response:
+            t_error_response:
               value:
                 - logref: error
                   message:  Запрос содержит некорректные данные. Измените запрос и отправьте его ещё раз
-            t_multiple_error_response:
+            t_structured_error_response:
               value:
                 logref: structured_error
                 errors:
@@ -440,7 +440,7 @@ components:
           description: Признак является ли страница последней
           type: boolean
 
-    t_single_error_response:
+    t_error_response:
       type: object
       description: Ошибка. Содержит общее описание ошибки
       required:
@@ -458,7 +458,7 @@ components:
           type: string
           example: Запрос содержит некорректные данные. Измените запрос и отправьте его ещё раз
 
-    t_multiple_error_response:
+    t_structured_error_response:
       type: object
       description: Ошибка. Содержит описание ошибок со ссылками на поля сущности
       required:
