@@ -1,0 +1,1 @@
+docker save -o fitness.dump fitness_product-service:1.0.0 fitness_user-service:1.0.0 fitness_pgadmin:1.0.0 fitness_postgresql:1.0.0 fitness_proxy:1.0.0 fitness_swagger-ui:1.0.0
