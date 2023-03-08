@@ -291,7 +291,7 @@ components:
           schema:
             type: array
             items:
-              $ref: '#/components/schemas/t_single_error_response'
+              $ref: '#/components/schemas/t_error_response'
           example:
             - logref: error
               message:  Сервер не смог корректно обработать запрос. Пожалуйста обратитесь к администратору
